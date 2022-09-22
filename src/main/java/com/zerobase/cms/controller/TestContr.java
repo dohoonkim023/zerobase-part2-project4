@@ -1,6 +1,7 @@
 package com.zerobase.cms.controller;
 
-//import com.zerobase.cms.service.test.EmailSendService;
+import com.zerobase.cms.client.MailgunClient;
+import com.zerobase.cms.service.test.EmailSendService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,11 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class TestContr {
 
-//    private final EmailSendService emailSendService;
+    private final MailgunClient mailgunClient;
 
     @GetMapping
     public String sendEmail() {
-//        return emailSendService.sendEamil();
+//        //testcode작성
+//        return MailgunClient.sendEamil();
         return "";
+
     }
 }
