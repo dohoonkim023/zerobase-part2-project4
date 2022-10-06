@@ -30,6 +30,8 @@ dependencies {
 
 	implementation group: 'com.h2database', name: 'h2', version: '1.4.200'
 
+	implementation 'org.apache.commons:commons-lang3:3.12.0'
+
 
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 
